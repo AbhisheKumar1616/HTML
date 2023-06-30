@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css basics</title>
+	<link rel="stylesheet" type="text/css" href="C:\Python\Personal\Frontend\CSS\cssbasics.css">
+	<style type="text/css">
+		div p{
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<p class="uppercase txtpattern" style="color: blue; font-size: 20px;">Inline CSS</p>
+	<!-- inline css and class styling applied, color is choosen wrt inline css -->
+	<div>
+		<p class="uppercase">Internal CSS</p>
+		<!-- internal css was applied using style tag but then class styling is superimposed -->
+	</div>
+	<p id="id-style">External CSS</p>
+	<!-- external css is applied without class -->
+
+</body>
+</html>
+
+<!-- CSS Importance
+1: Inline CSS
+2:Only External/internal(when same properties):
+	1: id
+	2: class
+	3: type
+3: both external and internal:
+	1: which ever is specified at last(when same properties)
+	2: both(when different properties are styled) -->
